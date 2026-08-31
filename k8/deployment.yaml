@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bff-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bff-demo
+  template:
+    metadata:
+      labels:
+        app: bff-demo
+    spec:
+      containers:
+        - name: bff-demo
+          image: ghcr.io/tipenn/bff-demo:latest
+          ports:
+            - containerPort: 8080
