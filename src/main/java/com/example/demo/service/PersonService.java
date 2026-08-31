@@ -41,8 +41,8 @@ public class PersonService {
             return repository.save(existing);
         });
     }
-
     public void delete(Long id) {
+        System.out.println("Deleting person with id: " + id);
         repository.deleteById(id);
     }
 }
