@@ -39,6 +39,13 @@ jobs:
         run: mvn -B test
 
   # ---------- STAGE 3: PUSH (build the image + publish it) ----------
+  middl:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing for myself
+        run: echo "Hello Divine Mercy sa buhay ni sister Faustina"
+
   push:
     needs: test   # only starts if "test" also succeeded
     runs-on: ubuntu-latest
