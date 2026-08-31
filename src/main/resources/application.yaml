@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo
+
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.vectorstore.azure.autoconfigure.AzureVectorStoreAutoConfiguration
