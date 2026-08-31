@@ -47,7 +47,7 @@ jobs:
         run: echo "Hello Divine Mercy sa buhay ni sister Faustina"
 
   push:
-    needs: test   # only starts if "test" also succeeded
+    needs: middle   # only starts if "test" also succeeded
     runs-on: ubuntu-latest
     permissions:
       contents: read
