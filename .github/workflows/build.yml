@@ -39,7 +39,7 @@ jobs:
         run: mvn -B test
 
   # ---------- STAGE 3: PUSH (build the image + publish it) ----------
-  middl:
+  middle:
     needs: test
     runs-on: ubuntu-latest
     steps:
